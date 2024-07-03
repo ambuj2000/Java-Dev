@@ -22,7 +22,7 @@ class MyJoinThread2 extends Thread
     }
 }
 
-class MyJoinThread extends Thread   //t1 thread
+class MyJoinThread extends Thread    //t1 thread
 {
     @Override
     public void run() {
