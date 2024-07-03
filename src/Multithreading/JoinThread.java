@@ -12,7 +12,7 @@ class MyJoinThread2 extends Thread
     public void run() {
         for (int i = 0; i <5 ; i++) {
             try {
-                t1.join();  //means
+                t1.join();  //means t2 thread will start after execution of t1 thread
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -22,7 +22,7 @@ class MyJoinThread2 extends Thread
     }
 }
 
-class MyJoinThread extends Thread
+class MyJoinThread extends Thread   //t1 thread
 {
     @Override
     public void run() {
