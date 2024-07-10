@@ -42,6 +42,7 @@ public class Synchronization {
     // can lead to data inconsistency
     //this is the condition when thread is not safe and vice-versa
 
+
     public static void main(String[] args) {
         PrintMsg p=new PrintMsg();
         SynThreadDemo t1=new SynThreadDemo(p);

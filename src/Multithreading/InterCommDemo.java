@@ -29,6 +29,7 @@ public class InterCommDemo {
             t1.wait();
             System.out.println("Main thread get notification");
             System.out.println(t1.sum);
+
         }
     }
 
