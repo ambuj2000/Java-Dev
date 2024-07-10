@@ -44,7 +44,8 @@ public class JoinThread {
         MyJoinThread2 t2=new MyJoinThread2(t1);
         t1.start();
         t2.start();
-        t2.join();  //main thread will get executed only when t2 thread gets executed
+        t2.join(); //main thread will get executed only when t2 thread gets executed
+        //t2.interrupt();  //to stop the thread from execution
         for (int i = 0; i <5 ; i++) {
             System.out.println("Main Thread");
         }
