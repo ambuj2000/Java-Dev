@@ -32,5 +32,12 @@ public class InterCommDemo {
 
         }
     }
-
 }
+
+
+//Output
+//Main thread waiting for t1
+//Child thread start sum
+//Child thread giving notification
+//Main thread get notification
+//124750

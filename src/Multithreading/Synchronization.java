@@ -7,7 +7,7 @@ class PrintMsg
         for (int i = 0; i < 5; i++) {
 
 
-            synchronized (this)
+            synchronized (this) //locks this object
             {
                 System.out.println("Executed by "+Thread.currentThread().getName());
                 System.out.println("Hello Ambuj...");
@@ -54,3 +54,38 @@ public class Synchronization {
 
     }
 }
+
+
+
+//Output
+
+//Executed by Ye Hai T1
+//Hello Ambuj...
+//Executed by Ye Hai T2
+//Hello Ambuj...
+//By Ambuj...Ye Hai T1
+//Executed by Ye Hai T1
+//Hello Ambuj...
+//By Ambuj...Ye Hai T2
+//Executed by Ye Hai T2
+//Hello Ambuj...
+//By Ambuj...Ye Hai T2
+//Executed by Ye Hai T2
+//Hello Ambuj...
+//By Ambuj...Ye Hai T1
+//Executed by Ye Hai T1
+//Hello Ambuj...
+//By Ambuj...Ye Hai T1
+//By Ambuj...Ye Hai T2
+//Executed by Ye Hai T1
+//Hello Ambuj...
+//Executed by Ye Hai T2
+//Hello Ambuj...
+//By Ambuj...Ye Hai T1
+//Executed by Ye Hai T1
+//Hello Ambuj...
+//By Ambuj...Ye Hai T2
+//Executed by Ye Hai T2
+//Hello Ambuj...
+//By Ambuj...Ye Hai T2
+//By Ambuj...Ye Hai T1
