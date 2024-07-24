@@ -1,6 +1,5 @@
 package Multithreading;
 
-
 class ThreadDemo1 extends Thread {
     int sum = 0;
 
